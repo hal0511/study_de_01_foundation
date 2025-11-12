@@ -16,15 +16,15 @@
 
 ## Phase 1. 基盤構築
 
-**目的:** データエンジニアの標準開発環境をDocker上に構築。
+目的: データエンジニアの標準開発環境をDocker上に構築。
 
-**学習内容**
+** 学習内容 **
 
 - Docker ComposeでPostgres / Airflow / dbtを起動
 - DevContainerでVSCode環境統一
 - Makefileで環境構築を自動化
 
-**成果物**
+** 成果物 **
 
 - `docker-compose.yml`：Airflow＋dbt＋Postgres連携
 - `.devcontainer/`：統一開発環境構成
@@ -54,38 +54,38 @@ study_de_01_foundation/
     └── learning_notes.md
 ```
 
-## 進捗管理
+## 最終管理
 
-**📦 環境準備**
+📦 **環境準備**
 
 - [ ] VSCode + Docker + Python環境の確認
 - [ ] DevContainer設定 (`./devcontainer/`)
 - [ ] `.gitignore` 整備
 
-** 🐘　PostgresSQL **
+🐘　**PostgresSQL**
 
-- [ ] `docker-compose.yml` でPostgreSQL起動
-- [ ] DB接続確認 (psql / Adminer)
+- [x]  `docker-compose.yml` でPostgreSQL起動
+- [x] DB接続確認 (psql / Adminer)
 - [ ] `init.sql` 作成
 
-** 🔧 dbt導入 **
+🔧 **dbt導入**
 
 - [ ] dbt-core + adapter (Postgres) セットアップ
 - [ ] `dbt run` 実行でstagingモデル作成
 - [ ] `dbt docs generate` 確認
 
-** 🧰 補助構成 **
+🧰 **補助構成**
 
 - [ ] Makefile追加
 - [ ] `.env` で認証情報管理
 - [ ] `README.md` に実行手順の項目を作成
 
-** 🪄 Airflow **
+🪄 **Airflow**
 
 - [ ] Airflowコンテナ追加
 - [ ] DAGテンプレート作成
 
-** 🧭 ドキュメント管理 **
+🧭 **ドキュメント管理**
 
 - [ ] `docs/learning_notes.md` を忘れずに書くこと
 - [ ] 環境構成図も作成
