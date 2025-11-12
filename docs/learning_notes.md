@@ -1,4 +1,11 @@
-# docker-composeについて
+# やったこと, その順序
+1. docker-compose.ymlにpostgresqlのサービス作成
+2. postgresqlの起動確認
+    - `docker compose up -d` でイメージ作成
+    - `docker compose ps` でコンテナ起動の確認
+    - `docker exec -it postgres_db psql -U de_user -d de_db` で対話モードで入って確認
+
+# 調べたこと docker-composeについて
 ## 実行順序
  YAMLの中で書く順番は関係ない．インデントと論理関係による. ちゃんとComposeが組み立ててくれる
 
