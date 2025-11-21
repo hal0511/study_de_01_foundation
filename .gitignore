@@ -1,2 +1,4 @@
 *.env
 GEMINI.md
+/dbt/logs
+/dbt/.user.yml

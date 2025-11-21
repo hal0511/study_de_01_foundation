@@ -1,0 +1,15 @@
+name: 'study_de_01_foundation'
+version: '1.0.0'
+config-version: 2
+
+profile: 'study_de_01_foundation'
+
+model-paths: ['dbt/models']
+analysis-paths: ['dbt/analysis']
+macro-paths: ['dbt/macros']
+seed-paths: ['dbt/seeds']
+test-paths: ['dbt/tests']
+
+models:
+  study_de_01_foundation:
+    +materialized: view
