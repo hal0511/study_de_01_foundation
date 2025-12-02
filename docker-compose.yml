@@ -33,7 +33,7 @@ services:
       - postgres
     command: ["sleep", "infinity"]
 
-  py-script:
+  python:
     image: python:3.12-slim
     container_name: python
     env_file:
