@@ -26,20 +26,18 @@ clean:
 # exec --rm はプロセス消去、コンテナは残る
 # ===================================
 psql:
-	docker compose exec --rm postgres psql -U $(POSTGRES_USER) -d $(POSTGRES_DB)
+	docker compose exec postgres psql -U $(POSTGRES_USER) -d $(POSTGRES_DB)
 
 # ===================================
 # Postgresql
 # exec --rm はプロセス消去、コンテナは残る
 # ===================================
 bash-dbt:
-	docker compose exec --rm dbt bash
+	docker compose exec dbt bash
 
 # ===================================
 # Python (REST API叩いてデータ取ってくる)
 # run --rm はコンテナ削除、ここは使い捨て
 # ===================================
 bash-python:
-	$(COMPOSE) run --rm \
-	--network=de_network \
-	python bash
+	$(COMPOSE) exec python bash
